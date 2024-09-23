@@ -1,8 +1,7 @@
 import { generalCollection } from '@/firebase/config';
+import { GENERAL_ID } from '@/constants/globals';
 import { doc, updateDoc } from 'firebase/firestore';
 import { getAny } from './core';
-
-const GENERAL_ID = '47rsPKlk9wWixPzOHTML';
 
 export async function getGeneral() {
   return getAny<GeneralType>(generalCollection, GENERAL_ID);
