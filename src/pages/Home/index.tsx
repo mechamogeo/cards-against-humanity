@@ -4,7 +4,6 @@ import { AddCardLink } from '@/components/add-card-link';
 import { Tags } from './tags';
 
 import { Actions } from './actions';
-import { Contribution } from './contribution';
 import { Header } from './header';
 import { JoinMatch } from './join-match';
 
@@ -29,7 +28,6 @@ export function Home(): JSX.Element {
 
         <Flex flexDir="column" gap="2" mt="-2" flex="1">
           <JoinMatch />
-          <Contribution />
         </Flex>
       </Flex>
 

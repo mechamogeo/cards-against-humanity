@@ -1,10 +1,8 @@
 import {
-  Box,
   Button,
   Flex,
   Heading,
   Icon,
-  Link,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -17,7 +15,6 @@ import {
 } from '@chakra-ui/react';
 
 import { RxCardStackPlus } from 'react-icons/rx';
-import { PixQRCode } from '../pix-qrcode';
 
 interface AddCardModalProps {
   isOpen?: boolean;
@@ -43,36 +40,8 @@ export function AddCardModal({ isOpen = false, onClose }: AddCardModalProps) {
         <ModalBody color="gray.800">
           <VStack w="full">
             <Text>
-              Para incluir uma nova carta no jogo, solicitamos um suporte de um
-              real por cada carta desejada. Basta enviar um Pix acompanhado de
-              uma mensagem específica para cada carta desejada, como
-              exemplificado abaixo:
+              Apenas admins podem adicionar cartas ao jogo...
             </Text>
-
-            <Box fontStyle="italic" pl="1" color="gray.600">
-              <Text>Pix de R$ 2.</Text>
-              <Text>Carta preta: Por que a galinha atravessou a rua?</Text>
-              <Text>Carta branca: Para chegar ao outro lado.</Text>
-            </Box>
-
-            <Text>
-              Certamente, se a carta recebida for considerada HORRÍVEL,
-              reembolsaremos o seu dinheiro. :)
-            </Text>
-
-            <Text>
-              Para mais informações, entre em contato com o e-mail{' '}
-              <Link
-                href="mailto:silvanosilvino@hotmail.com"
-                fontWeight="bold"
-                textDecor="underline"
-              >
-                silvanosilvino@hotmail.com
-              </Link>
-              .
-            </Text>
-
-            <PixQRCode copyMessage="show" maxW="200px" />
           </VStack>
         </ModalBody>
 

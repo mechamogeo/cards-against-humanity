@@ -1,6 +1,5 @@
 import { Box, Center, Heading, Text } from '@chakra-ui/react';
 import { WhiteLogo } from '../Card/Logos';
-import { PixQRCode } from '../pix-qrcode';
 
 export function Maintance(): JSX.Element {
   return (
@@ -18,8 +17,6 @@ export function Maintance(): JSX.Element {
           Deseja auxiliar no projeto? Considere me pagar um café 😊
         </Text>
       </Box>
-
-      <PixQRCode maxW="300px" copyMessage="show" />
     </Center>
   );
 }
