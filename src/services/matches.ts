@@ -119,7 +119,7 @@ export async function sortPlayersDecks({
   users,
   cards,
 }: SortPlayersDecksParams): Promise<DeckType[]> {
-  const CARDS_IN_DECK = 4;
+  const CARDS_IN_DECK = 7;
 
   const awnsers = cards.filter(({ type }) => type === 'WHITE');
 
