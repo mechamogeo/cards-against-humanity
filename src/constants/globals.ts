@@ -1,4 +1,4 @@
 export const CARD_TOKEN = '[?]';
 export const IS_MAINTANCE = false;
-export const MAX_OF_CARDS_IN_DECK = 4;
+export const MAX_OF_CARDS_IN_DECK = 7;
 export const GENERAL_ID = '47rsPKlk9wWixPzOHTML';
